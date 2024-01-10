@@ -1,0 +1,22 @@
+#maincategory{
+    margin-top: 50px;
+}
+#maincategory article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#maincategory article main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#maincategory article img{
+    height: 350px;
+}
+#maincategory article h1{
+    margin: 20px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+

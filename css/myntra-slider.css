@@ -1,0 +1,82 @@
+#mainslider{
+    overflow: hidden;
+}
+#mainslider article figure{
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 40px;
+    animation: 30s infinite slideTheImg 2s;
+}
+/* @keyframes slideTheImg {
+    0%   {left: 0%;}
+    25%  {left: -100%;}
+    50%  {left: -200%;}
+    75%  {left: -300%;}
+    100% {left: -400%;}
+  } */
+
+#mainslider input[type="radio"]{
+    display: none;
+}
+#mainslider .lab-btn{
+	position: absolute;
+    top: 430px;
+    left: 580px;
+    height: 20px;
+    width: 20px;
+    border: gray solid;
+    border-radius: 100%;
+    z-index: 4;
+}
+#mainslider #label2{
+    left: 620px;
+}
+#mainslider #label3{
+    left: 660px;
+}
+#mainslider #label4{
+    left: 700px;
+}
+#mainslider .label_movement{
+    position: absolute;
+    top: 430px;
+    left: 580px;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 100%;
+    transition: all 2s ease;
+    z-index: 5;
+}
+#rad1:checked ~ .label_movement {
+    margin-left: 0;
+}
+#rad2:checked~.label_movement {
+    margin-left: 40px;
+}
+#rad3:checked ~ .label_movement {
+    transform: translateX(40px);
+}
+#rad4:checked ~ .label_movement {
+    transform: translateX(40px);
+}
+#mainslider img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+	transition  : all 2s ease;
+	transform: translateX(0px);
+}
+#rad1:checked ~ .slider_image {
+    margin-left: 0;
+}
+#rad2:checked ~ .slider_image {
+    margin-left: 50%;
+}
+#rad3:checked ~ .slider_image {
+    margin-left: 100%;
+}
+#rad4:checked ~ .slider_image {
+    margin-left: 150%;
+}

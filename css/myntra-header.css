@@ -1,0 +1,505 @@
+#myntraheader{
+    height: 80px;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    position: relative;
+    width: 100%;
+}
+#myntraheader article{
+    padding: 0% 5% ;
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+#myntraheader > article > .leftblock,.rightblock{
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+}
+#myntraheader > article > .leftblock > div:first-child{
+    flex-basis: 10%;
+}
+#myntraheader > article > .leftblock > div:last-child{
+    flex-basis: 90%;
+}
+#myntraheader > article > .rightblock div:first-child{
+    flex-basis: 75%;
+}
+#myntraheader > article > .rightblock div:last-child{
+    flex-basis: 25%;
+}
+#myntraheader article .myntralogo a{
+    background: var(--sprite-image);
+    display: inline-block;
+    vertical-align: middle;
+    width: 53px;
+    height: 36px;
+    background-position: -462px 0;
+    background-size: 1404px 105px;
+    cursor: pointer;
+}
+#myntraheader .mainmenu .menu-list{
+    padding: 14px;
+}
+#myntraheader .mainmenu > ul{
+    display: flex;
+    align-items: center;
+}
+#myntraheader .mainmenu > ul > li{
+    list-style: none;
+}
+#myntraheader .mainmenu > ul > li > a{
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#myntraheader .mainmenu > ul > li > a:hover{
+    border-bottom: 2px solid var(--pink-color);
+}
+#myntraheader .mainmenu > ul > li > a sup{
+    color: var(--pink-color);
+    font-size: 10px;
+    padding: 3px;
+}
+#myntraheader .searchtab {
+    padding: 0px 10px;
+    margin-right: 40px;
+    background-color: #f5f5f6;
+    border-radius: 5px;
+}
+#myntraheader .searchtab :focus{
+    background-color: white;
+    border: 1px solid #eee;
+}
+#myntraheader .searchtab i {
+    padding: 10px;
+    color: rgb(130, 127, 127);
+}
+#myntraheader .searchtab input {
+    padding: 10px;
+    width: 80%;
+    background-color: #f5f5f6;
+    outline: 0;
+    border: none;
+}
+
+
+#myntraheader .sidemenu ul{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+#myntraheader .sidemenu ul li{
+    list-style: none;
+}
+#myntraheader .sidemenu ul li a{
+    text-decoration: none;
+}
+#myntraheader .sidemenu ul li a span:first-child{
+    display: inline-block;
+}
+#myntraheader .sidemenu ul li a span:last-child{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 12px;
+}
+#myntraheader .sidemenu .profile-icon{
+    width: 24px;
+    height: 22px;
+    background-position: -298px -56px;
+    background-size: 1404px 105px;
+    background-image: var(--sprite-image);
+}
+#myntraheader .sidemenu .whishlist-icon{
+    width: 17px;
+    height: 22px;
+    background-position: -315px -187px;
+    background-size: 1404px 105px;
+    background-image: var(--sprite-image);
+}
+#myntraheader .sidemenu .bag-icon{
+    width: 22px;
+    height: 22px;
+    background-position: -341px -56px;
+    background-size: 1404px 105px;
+    background-image: var(--sprite-image);
+}
+#myntraheader .rightblock .sidemenu ul li:first-child{
+    position: relative;
+}
+#myntraheader .rightblock .sidemenu .profile-dropdown{
+    width: 270px;
+    padding: 5px;
+    min-height: 400px;
+    max-height: 500px;
+    position: absolute;
+    top: 62px;
+    right: 50%;
+    transform: translate(50%, 0%);
+    box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
+    border: 1px solid #eee;
+    background-color: white;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+}
+#myntraheader .rightblock .sidemenu :hover > .profile-dropdown{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+#myntraheader .rightblock .sidemenu .profile-dropdown .border-top-profile{
+    margin: 0 auto;
+    width: 25%;
+    transition: ease all 0.5s;
+    border-top: 5px solid var(--pink-color);
+    position: relative;
+    top: -10px;
+}
+#myntraheader .profile-dropdown article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+#myntraheader .profile-dropdown ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 10px;
+}
+#myntraheader .profile-dropdown .head-drop h4{
+    font-size: 20px;
+}
+#myntraheader .profile-dropdown .head-drop p{
+    font-size: 13px;
+    margin: 10px 0px;
+    color: grey;
+}
+#myntraheader .profile-dropdown .head-drop button{
+    font-size: 14px;
+    padding: 7px 20px;
+    color: var(--pink-color);
+    background-color: white;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#myntraheader .profile-dropdown .head-drop button:hover{
+    border: 1px solid var(--pink-color);
+    cursor: pointer;
+}
+#myntraheader .profile-dropdown ul li a{
+    color: rgb(95, 88, 88);
+    font-weight: 100;
+    font-size: 15px;
+}
+#myntraheader .profile-dropdown ul li a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: unset;
+}
+#myntraheader .profile-dropdown main{
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+#myntraheader .leftblock .menu-list{
+    position: relative;
+
+}
+#myntraheader .leftblock .menu-list #men-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 1110px;
+    height: 75vh;
+    top: 65px;
+    left: -70px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #men-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+#men-dropdown article{
+    display: flex;
+    padding: 0;
+}
+#men-dropdown article div{
+    flex: 1;
+    padding: 10px;
+}
+#men-dropdown article > div > ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    list-style: none;
+    padding: 15px;
+}
+#men-dropdown article > div > ul> li> a{
+    text-decoration: none;
+    color: rgb(95, 88, 88);
+    font-size: 14px;
+}
+#men-dropdown article > div > ul> li> a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: 15px;
+}
+#men-dropdown article > div > ul> li:first-child a{
+    color: var(--pink-color);
+}
+#men-dropdown article > div > ul> li:first-child a:hover{
+    font-size: 14px;
+    font-weight: normal;
+}
+#myntraheader .leftblock .menu-list #women-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 1110px;
+    height: 75vh;
+    top: 65px;
+    left: -127px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #women-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+#women-dropdown article{
+    display: flex;
+    padding: 0;
+}
+#women-dropdown article div{
+    flex: 1;
+    padding: 10px;
+}
+#women-dropdown article > div > ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    list-style: none;
+    padding: 15px;
+}
+#women-dropdown article > div > ul> li> a{
+    text-decoration: none;
+    color: rgb(95, 88, 88);
+    font-size: 14px;
+}
+#women-dropdown article > div > ul> li> a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: 15px;
+}
+#women-dropdown article > div > ul> li:first-child a{
+    color: #fb56c1;
+}
+#women-dropdown article > div > ul> li:first-child a:hover{
+    font-size: 14px;
+    font-weight: normal;
+}
+#myntraheader .leftblock .menu-list #kids-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 1110px;
+    height: 75vh;
+    top: 65px;
+    left: -208px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #kids-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+#kids-dropdown article{
+    display: flex;
+    padding: 0;
+}
+#kids-dropdown article div{
+    flex: 1;
+    padding: 10px;
+}
+#kids-dropdown article > div > ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    list-style: none;
+    padding: 15px;
+}
+#kids-dropdown article > div > ul> li> a{
+    text-decoration: none;
+    color: rgb(95, 88, 88);
+    font-size: 14px;
+}
+#kids-dropdown article > div > ul> li> a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: 15px;
+}
+#kids-dropdown article > div > ul> li:first-child a{
+    color: #f26a10;
+}
+#kids-dropdown article > div > ul> li:first-child a:hover{
+    font-size: 14px;
+    font-weight: normal;
+}
+#myntraheader .leftblock .menu-list #living-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 1110px;
+    height: 75vh;
+    top: 65px;
+    left: -265px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #living-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+#living-dropdown article{
+    display: flex;
+    padding: 0;
+}
+#living-dropdown article div{
+    flex: 1;
+    padding: 10px;
+}
+#living-dropdown article > div > ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    list-style: none;
+    padding: 15px;
+}
+#living-dropdown article > div > ul> li> a{
+    text-decoration: none;
+    color: rgb(95, 88, 88);
+    font-size: 14px;
+}
+#living-dropdown article > div > ul> li> a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: 15px;
+}
+#living-dropdown article > div > ul> li:first-child a{
+    color: #f2c210;
+}
+#living-dropdown article > div > ul> li:first-child a:hover{
+    font-size: 14px;
+    font-weight: normal;
+}
+#myntraheader .leftblock .menu-list #beauty-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 1110px;
+    height: 75vh;
+    top: 65px;
+    left: -392px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #beauty-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+#beauty-dropdown article{
+    display: flex;
+    padding: 0;
+}
+#beauty-dropdown article div{
+    flex: 1;
+    padding: 10px;
+}
+#beauty-dropdown article > div > ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    list-style: none;
+    padding: 15px;
+}
+#beauty-dropdown article > div > ul> li> a{
+    text-decoration: none;
+    color: rgb(95, 88, 88);
+    font-size: 14px;
+}
+#beauty-dropdown article > div > ul> li> a:hover{
+    color: unset;
+    font-weight: bold;
+    font-size: 15px;
+}
+#beauty-dropdown article > div > ul> li:first-child a{
+    color: #0db7af;
+}
+#beauty-dropdown article > div > ul> li:first-child a:hover{
+    font-size: 14px;
+    font-weight: normal;
+}
+#myntraheader .leftblock .menu-list #studio-dropdown{
+    background-color: white;
+    position: absolute;
+    width: 510px;
+    height: 75vh;
+    top: 65px;
+    right: -200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: 111;
+}
+#myntraheader .leftblock .menu-list:hover > #studio-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+/* login&signup section starts */
+.mainlogsign {
+    width: 400px;
+    min-height: 470px;
+    max-height: 470px;
+    position: absolute;
+    top: 80px;
+    left: 18%;
+    transform: translate(50%, 0%);
+    box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
+    border: 1px solid #eee;
+    background-color: white;
+    text-align: left;
+    z-index: 123;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s;
+}
+/* CHECK JS FILE */
+
+.log_sign_pop{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.8s;
+}
+.log_sign_pop figure img{
+    width: 100%;
+}
+.log_sign_pop main{
+    margin-top: 40px;
+    padding: 0px 40px;
+}
+/* login&signup section ends */
